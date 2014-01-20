@@ -1,7 +1,4 @@
 var canvas;
-var canvas1;
-var canvas3;
-var canvas2;
 
 var context;
 
@@ -9,9 +6,9 @@ function init() {
 
   canvas = document.getElementById("canvas-large");
 
-  canvas1 = document.getElementById("canvas-1");
-  canvas2 = document.getElementById("canvas-2");
-  canvas3 = document.getElementById("canvas-3");
+  var canvas1 = document.getElementById("canvas-1"),
+      canvas2 = document.getElementById("canvas-2"),
+      canvas3 = document.getElementById("canvas-3");
 
   context = canvas.getContext("2d");
 
