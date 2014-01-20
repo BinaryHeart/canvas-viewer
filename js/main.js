@@ -41,3 +41,6 @@ function copy(e) {
   context.fillText("0,0", 2, 10);
   context.fillText(canvas.width+","+canvas.height,canvas.width-45,canvas.height-5);
 }
+
+// main
+init();
