@@ -1,9 +1,5 @@
-var canvas;
-
 function init() {
-
-  canvas = document.getElementById("canvas-large");
-
+  var canvas = document.getElementById("canvas-large");
   var canvas1 = document.getElementById("canvas-1"),
       canvas2 = document.getElementById("canvas-2"),
       canvas3 = document.getElementById("canvas-3");
@@ -18,10 +14,12 @@ function init() {
 }
 
 function copy(e) {
-  var destinationCanvas = document.getElementById(e.target.id);
+  var canvas = document.getElementById("canvas-large"),
+      source = document.getElementById(e.target.id);
+
   context = canvas.getContext("2d");
   context.clearRect(0, 0, canvas.width, canvas.height);
-  context.drawImage(destinationCanvas,0,0);
+  context.drawImage(source,0,0);
 
   var steps = 8;
 
