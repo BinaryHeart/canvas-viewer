@@ -7,11 +7,11 @@ var context;
 
 function init() {
 
-  canvas = document.getElementById("myCanvas");
+  canvas = document.getElementById("canvas-large");
 
-  canvas1 = document.getElementById("canvasOne");
-  canvas2 = document.getElementById("canvasTwo");
-  canvas3 = document.getElementById("canvasThree");
+  canvas1 = document.getElementById("canvas-1");
+  canvas2 = document.getElementById("canvas-2");
+  canvas3 = document.getElementById("canvas-3");
 
   context = canvas.getContext("2d");
 

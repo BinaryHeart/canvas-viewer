@@ -1,13 +1,12 @@
 .container{
   text-align: center;
-  margin: 26px auto;
 }
 
 canvas{
   border:1px solid #000000;
 }
 
-#myCanvas{
+#canvas-large{
   height: 400px;
   width: 600px
 }
