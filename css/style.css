@@ -52,3 +52,10 @@ canvas{
   top: 12.5px;
   margin: auto 6px;
 }
+#thumbnails canvas:hover{
+  opacity: 0.5;
+  cursor: hand;
+  border: 5px solid #aaa;
+  width:  90px;
+  height: 90px;
+}
