@@ -15,9 +15,9 @@ function init() {
 
   context = canvas.getContext("2d");
 
-  drawBox1();
-  drawBox2();
-  drawBox3();
+  drawBox1(canvas1);
+  drawBox2(canvas2);
+  drawBox3(canvas3);
 
   canvas1.addEventListener('click', copy, false);
   canvas2.addEventListener('click', copy, false);
