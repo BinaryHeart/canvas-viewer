@@ -1,7 +1,5 @@
 var canvas;
 
-var context;
-
 function init() {
 
   canvas = document.getElementById("canvas-large");
@@ -9,8 +7,6 @@ function init() {
   var canvas1 = document.getElementById("canvas-1"),
       canvas2 = document.getElementById("canvas-2"),
       canvas3 = document.getElementById("canvas-3");
-
-  context = canvas.getContext("2d");
 
   drawBox1(canvas1);
   drawBox2(canvas2);
