@@ -45,4 +45,8 @@ function copy(e) {
     context.lineTo(canvas.width, (r * canvas.height / steps));
     context.stroke();
   }
+
+  context.font="10px Courier";
+  context.fillText("0,0", 2, 10);
+  context.fillText(canvas.width+","+canvas.height,canvas.width-45,canvas.height-5);
 }
