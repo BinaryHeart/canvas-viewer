@@ -1,9 +1,8 @@
-canvas {
-  
+canvas{
   border:1px solid #000000;
 }
 
-#myCanvas {
+#myCanvas{
   height: 400px;
   width: 600px
 }
