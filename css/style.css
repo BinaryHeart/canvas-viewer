@@ -1,12 +1,54 @@
-.container{
-  text-align: center;
+html, body{
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
 }
 
 canvas{
-  border:1px solid #000000;
+  background: #fff;
 }
 
-#canvas-large{
-  height: 400px;
-  width: 600px
+#fullscreen,
+#thumbnails{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  left: 0;
+}
+
+/*
+ * Fullscreen
+ */
+#fullscreen{
+  top: 0px;
+  bottom: 125px;
+  overflow-y: auto;
+  background: #fff;
+}
+#fullscreen div{
+  position: absolute;
+  left:   22px;
+  right:  22px;
+  top:    22px;
+  bottom: 22px;
+}
+#fullscreen canvas{
+  height: 100%;
+}
+
+
+/*
+ * Thumbnails
+ */
+#thumbnails{
+  bottom: 0px;
+  height: 125px;
+  background: #dedede;
+}
+#thumbnails canvas{
+  height: 100px;
+  position: relative;
+  top: 12.5px;
+  margin: auto 6px;
 }

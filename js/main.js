@@ -29,4 +29,20 @@ function copy(e) {
   context = canvas.getContext("2d");
   context.clearRect(0, 0, canvas.width, canvas.height);
   context.drawImage(destinationCanvas,0,0);
+
+  var steps = 8;
+
+  context.strokeStyle="rgba(0,0,0,.2)";
+  for(var c=0; c<=steps; c++){
+    context.beginPath();
+    context.moveTo((c * canvas.width / steps), 0);
+    context.lineTo((c * canvas.width / steps), canvas.height);
+    context.stroke();
+  }
+  for(var r=0; r<=steps; r++){
+    context.beginPath();
+    context.moveTo(0, (r * canvas.height / steps));
+    context.lineTo(canvas.width, (r * canvas.height / steps));
+    context.stroke();
+  }
 }

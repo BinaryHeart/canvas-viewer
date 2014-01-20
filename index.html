@@ -2,17 +2,18 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
   </head>
   <body onload="init();">
-    <div class="container">
-      <canvas id="canvas-large"></canvas>
-      <div id="canvases">
-        <canvas id="canvas-1" height="200px" width="195px"></canvas>
-        <canvas id="canvas-2" height="200px" width="195px"></canvas>
-        <canvas id="canvas-3" height="200px" width="195px"></canvas>
+    <div id="fullscreen">
+      <div>
+        <canvas id="canvas-large" width="300" height="300"></canvas>
       </div>
-    <div>
+    </div>
+    <div id="thumbnails">
+      <canvas id="canvas-1" width="300" height="300"></canvas>
+      <canvas id="canvas-2" width="300" height="300"></canvas>
+      <canvas id="canvas-3" width="300" height="300"></canvas>
+    </div>
     <script src="js/main.js"></script>
     <script src="js/patterns.js"></script>
   </body>
