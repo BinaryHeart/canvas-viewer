@@ -43,4 +43,4 @@ function copy(e) {
 }
 
 // main
-init();
+window.onload = init;
